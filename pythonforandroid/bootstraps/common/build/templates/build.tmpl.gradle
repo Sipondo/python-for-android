@@ -32,7 +32,7 @@ android {
     compileSdkVersion {{ android_api }}
     buildToolsVersion '{{ build_tools_version }}'
     defaultConfig {
-        minSdkVersion {{ android_api }}
+        minSdkVersion {{ args.min_sdk_version }}
         targetSdkVersion {{ android_api }}
         versionCode {{ args.numeric_version }}
         versionName '{{ args.version }}'
